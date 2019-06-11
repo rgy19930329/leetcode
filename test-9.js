@@ -1,5 +1,6 @@
 /**
  * 判断回文数
+ * @url https://leetcode-cn.com/problems/palindrome-number/
  * @param {number} x
  * @return {boolean}
  */

@@ -1,5 +1,6 @@
 /**
  * 整数反转
+ * @url https://leetcode-cn.com/problems/reverse-integer/
  * @param {*} x 
  */
 var reverse = function(x) {

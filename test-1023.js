@@ -1,5 +1,6 @@
 /**
  * 驼峰式匹配
+ * @url https://leetcode-cn.com/problems/camelcase-matching/
  * @param {string[]} queries
  * @param {string} pattern
  * @return {boolean[]}

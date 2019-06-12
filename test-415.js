@@ -5,15 +5,15 @@ Array.prototype.toInt = function () {
   }
   return this;
 }
-// 从数组末尾起移除0，直到非0停止
+// 从数组末尾起移除0，直到非0或者只剩一位时停止
 Array.prototype.removeZero = function () {
   var flag = true,
     len = this.length;
   for (var i = len - 1; i >= 0; i--) {
-    if (this[i] != 0) {
+    if (this[i] !== 0) {
       flag = false;
     }
-    if (flag && this[i] == 0) {
+    if (flag && this[i] === 0 && this.length >= 2) {
       this.splice(i, 1);
     }
   }
@@ -54,7 +54,7 @@ var addStrings = function(num1, num2) {
     rx[i + 1] = s;
   }
 
-  rx = rx.removeZero().reverse().join('');
+  rx = rx.removeZero().reverse().join("");
   return rx;
 };
 
